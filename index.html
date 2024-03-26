@@ -9,18 +9,21 @@
     <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
-<body class="bg-gray-300">
+<body class="bg-gray-300"> 
     <header class="bg-red-400 py-4 px-10 flex items-center justify-between">
         <div>
             <img src="img/logo.jpg" alt="Logo" class="rounded-full h-12">
         </div>
-        <nav class="flex-1 text-center">
-            <ul class="flex justify-center">
+        <button id="menu-btn" class="md:hidden block">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+        <nav id="nav-menu" class="hidden md:block">
+            <ul class="md:flex justify-center">
                 <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">L'athlétisme en NC</a></li>
-                <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">Nos Athlètes</a></li>
-                <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">Jeux</a></li>
-                <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">Vidéos</a></li>
-                <li class="mr-6"><a href="#" class="text-white hover:text-gray-300">A propos</a></li>
+                <li class="mr-6"><a href="#athletes" class="text-white hover:text-gray-300">Nos Athlètes</a></li>
+                <li class="mr-6"><a href="#jeux" class="text-white hover:text-gray-300">Jeux</a></li>
+                <li class="mr-6"><a href="#videos" class="text-white hover:text-gray-300">Vidéos</a></li>
+                <li class="mr-6"><a href="#a-propos" class="text-white hover:text-gray-300">A propos</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +40,7 @@
         </div>
     </section>
     
-
+<main class="p-0.5 sm:p-1 md:p-2.5">
     <section class="separation-section bg-white">
         <img src="img/run scroll.gif" alt="Image" class="separation-image">
     </section>
@@ -45,7 +48,7 @@
 
     <div class="container mx-auto py-8">
         <h1 class="text-3xl font-semibold text-center mb-8">Présentation de l'athlétisme en Nouvelle-Calédonie</h1>
-        <div class="flex justify-center items-center">
+        <div class="flex flex-wrap justify-center items-center gap-4 md:flex-row">
             <div class="athletics-div flex-1 mr-4">
                 <h2 class="text-2xl text-center">A propos de la ligue d'athlétisme</h2>
                 <img src="img/ex présentation.jpg" alt="img" class="rounded-xl w-0.5rem h-auto my-1">
@@ -75,9 +78,9 @@
     </section>
 
 
-    <div class="container mx-auto py-8">
+    <div id="athletes" class="container mx-auto py-8">
         <h1 class="text-3xl font-semibold text-center mb-8">Présentation des athlètes de Nouvelle-Calédonie</h1>
-        <div class="flex justify-center">
+        <div class="flex flex-wrap justify-center gap-4 md:flex-row">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
@@ -147,7 +150,7 @@
 
         <br>
 
-        <div class="flex justify-center">
+        <div class="flex flex-wrap justify-center gap-4 md:flex-row">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
@@ -226,7 +229,7 @@
     </section>
 
 
-    <div class="container mx-auto py-8">
+    <div id="jeux" class="container mx-auto py-8 w-full md:w-3/4">
         <h2 class="text-2xl font-semibold text-center mb-8">Premier jeu à intégrer 100m</h2>
         <div class="flex justify-center">
             <iframe src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
@@ -245,7 +248,7 @@
     </section>
 
 
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
             <div class="mb-4">
@@ -342,7 +345,7 @@
     </section>
 
 
-    <div class="container mx-auto py-8">
+    <div class="container mx-auto py-8 md:w-3/4">
         <h2 class="text-2xl font-semibold text-center mb-8">Second jeu à intégrer 100m haie</h2>
         <div class="flex justify-center">
             <iframe src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
@@ -361,7 +364,7 @@
     </section>
 
 
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
             <div class="mb-4">
@@ -458,7 +461,7 @@
     </section>
 
 
-    <div class="container mx-auto py-12">
+    <div class="container mx-auto py-12 md:w-3/4">
         <h2 class="text-2xl font-semibold text-center mb-8">Troisième jeu à intégrer Lancer de poids</h2>
         <div class="flex justify-center">
             <iframe src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
@@ -477,7 +480,7 @@
     </section>
 
 
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
             <div class="mb-4">
@@ -574,7 +577,7 @@
     </section>
 
 
-    <div class="container mx-auto py-12">
+    <div class="container mx-auto py-12 md:w-3/4">
         <h2 class="text-2xl font-semibold text-center mb-8">Quatrième jeu à intégrer Saut en hauteur (paralympique)</h2>
         <div class="flex justify-center">
             <iframe src="https://html5.gamedistribution.com/24238ae04d7c486eb3810964d2fe5103/?gd_sdk_referrer_url=https%3A%2F%2Fwww.jeux-gratuits.com%2Fjeu-hurdles-heroes.html" 
@@ -593,7 +596,7 @@
     </section>
 
 
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Quizz sur l'athlétisme</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
             <div class="mb-4">
@@ -690,7 +693,7 @@
     </section>
 
 
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Score final</h2>
         <div class="bg-white rounded-lg shadow-lg p-6 mb-6">
             <div class="flex items-center justify-between mb-4">
@@ -741,8 +744,7 @@
         <img src="img/run scroll.gif" alt="Image" class="separation-image">
     </section>
 
-
-    <section class="container mx-auto py-8">
+    <section class="container mx-auto py-8 w-full md:w-1/2">
         <h2 class="text-2xl font-semibold text-center mb-8">Contactez-nous</h2>
         <form action="#" method="POST">
             <div class="mb-4">
@@ -776,7 +778,7 @@
     </section>
 
     
-    <section class="container mx-auto py-8">
+    <section id="videos" class="container mx-auto py-8">
         <h2 class="text-2xl font-semibold text-center mb-8">Projet de site one-page : Athlétisme</h2>
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div class="bg-gray-200 h-96">
@@ -803,7 +805,7 @@
     </section>
 
 
-    <div class="container mx-auto py-12">
+    <div id="a-propos" class="container mx-auto py-12">
         <h1 class="text-3xl font-semibold text-center mb-8">Présentation des membres du groupe</h1>
         <br>
         <div class="flex justify-center">
@@ -822,72 +824,81 @@
         </div>
         <br>
         <br>
-        <div class="flex justify-center">
+        <div class="flex flex-wrap justify-center gap-4 md:flex-row">
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
-                        <h2 class="text-2xl font-semibold">Nom et prénom</h2>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairDreads01&accessoriesType=Sunglasses&hairColor=Auburn&facialHairType=BeardMajestic&facialHairColor=BlondeGolden&clotheType=BlazerShirt&eyeType=Cry&eyebrowType=AngryNatural&mouthType=Smile&skinColor=Tanned'/>
-                        <p>Description de l'athlète 1</p>
+                        <h2 class="text-2xl font-semibold">Camille</h2>
+                        <img src='img/camille.png'/>
+                        <p>Développement back-end & front-end, audiovisuel
+                        </p>
                     </div>
                     <div class="flip-card-back p-8">
-                        <h2 class="text-2xl font-semibold">Plus d'infos sur Athlète 1</h2>
-                        <p>Informations supplémentaires sur l'athlète 1</p>
+                        <p>Développeuse back-end et front-end avec une touche d'audiovisuel, je jongle entre codes et créations multimédias sans jamais enfiler de baskets. Mon terrain de jeu ? Un écran, où je fais vibrer pixels et lignes de code en harmonie. Pas de course physique ici, mais une quête constante d'excellence digitale. Mon défi : transformer vos idées en réalisations captivantes, le tout avec agilité et sans une goutte de sueur (sauf face aux deadlines !)</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
-                        <h2 class="text-2xl font-semibold">Athlète 2</h2>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairTheCaesarSidePart&accessoriesType=Prescription02&hairColor=Black&facialHairType=BeardMajestic&facialHairColor=Platinum&clotheType=Overall&clotheColor=PastelGreen&eyeType=Dizzy&eyebrowType=DefaultNatural&mouthType=Twinkle&skinColor=Tanned'/>
-                        <p>Description de l'athlète 2</p>
+                        <h2 class="text-2xl font-semibold">Mattéo</h2>
+                        <img src='img/Matteo.png'/>
+                        <p>Chef de projet, Stratégie Marketing & Communication</p>
                     </div>
                     <div class="flip-card-back p-8">
-                        <h2 class="text-2xl font-semibold">Plus d'infos sur Athlète 2</h2>
-                        <p>Informations supplémentaires sur l'athlète 2</p>
+                        <p class="text-description">Chef de projet dans l’âme, ma stratégie pour conquérir le marché est aussi affûtée que ma stratégie pour éviter le sport. Expert en communication, je sais faire parler les marques mieux que je ne parle à mon tapis de course (qui commence à prendre la poussière). Ma passion ? Transformer des idées en campagnes victorieuses, avec un zeste d'humour et une pincée d'audace. Je ne cours peut-être pas de marathon, mais je mène mes projets comme des sprints : avec détermination et un souffle d'innovation.</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
-                        <h2 class="text-2xl font-semibold">Athlète 3</h2>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Kurt&hatColor=PastelBlue&hairColor=Red&facialHairType=MoustacheMagnum&facialHairColor=Brown&clotheType=GraphicShirt&clotheColor=Red&graphicType=Selena&eyeType=Wink&eyebrowType=UnibrowNatural&mouthType=Grimace&skinColor=Pale'
+                        <h2 class="text-2xl font-semibold">Louanne</h2>
+                        <img src='img/Louanne.png'
 />
-                        <p>Description de l'athlète 2</p>
+                        <p>Cheffe de projet, développement back-end & front-end, audiovisuel</p>
                     </div>
                     <div class="flip-card-back p-8">
-                        <h2 class="text-2xl font-semibold">Plus d'infos sur Athlète 2</h2>
-                        <p>Informations supplémentaires sur l'athlète 2</p>
+                        <p>Louanne étudiante en MMI (Métiers du Multimédia et de l'Internet), spécialisation développement web. Mais méfiez-vous, derrière son apparence calme se cache un gobelin passionné de jeux vidéo et d'aventures numériques !</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
-                        <h2 class="text-2xl font-semibold">Athlète 4</h2>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairFrida&accessoriesType=Prescription02&hairColor=Blue&facialHairType=MoustacheFancy&facialHairColor=Red&clotheType=GraphicShirt&clotheColor=PastelYellow&graphicType=Skull&eyeType=Default&eyebrowType=UpDownNatural&mouthType=Smile&skinColor=DarkBrown'
+                        <h2 class="text-2xl font-semibold">Cyriaque</h2>
+                        <img src='img/Cyriaque.png'
 />
-                        <p>Description de l'athlète 2</p>
+                        <p>Développement Back-End & Front-End</p>
                     </div>
                     <div class="flip-card-back p-8">
-                        <h2 class="text-2xl font-semibold">Plus d'infos sur Athlète 2</h2>
-                        <p>Informations supplémentaires sur l'athlète 2</p>
+                        <p class="text-description">Cyriaque, apprenti sorcier développeur en LP MIAW, jonglant entre les charmes du front-end et les sortilèges du back-end. Ma véritable magie ? Marathons d'animes japonais avec un soupçon de maestria en émissions de cuisine et pâtisserie. Mon grimoire préféré ? Un IDE ouvert, mes sorts préférés s'écrivent en JavaScript et Python. Mon repas de champion ? Inspiré des écrans, cuisiné pendant les pauses débug. En quête perpétuelle du code parfait et du plat qui réconforte l'âme.</p>
                     </div>
                 </div>
             </div>
             <div class="flip-card">
                 <div class="flip-card-inner">
                     <div class="flip-card-front p-8">
-                        <h2 class="text-2xl font-semibold">Athlète 5</h2>
-                        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=Hat&accessoriesType=Prescription02&facialHairType=Blank&facialHairColor=BlondeGolden&clotheType=Hoodie&clotheColor=Black&graphicType=Deer&eyeType=EyeRoll&eyebrowType=DefaultNatural&mouthType=Vomit&skinColor=Light'
+                        <h2 class="text-2xl font-semibold">Magaly</h2>
+                        <img src='img/Magaly.png'
 />
-                        <p>Description de l'athlète 2</p>
+                        <p>Stratégie Marketing & Communication, Contact avec la ligue, Graphisme</p>
                     </div>
                     <div class="flip-card-back p-8">
-                        <h2 class="text-2xl font-semibold">Plus d'infos sur Athlète 2</h2>
-                        <p>Informations supplémentaires sur l'athlète 2</p>
+                        <p class="text-description">Stratège en marketing et communication, je navigue entre brainstormings créatifs et échanges avec la ligue, sans jamais chausser les baskets. Expert en jonglage de concepts et de designs plutôt qu'en dribble, je transforme les idées en victoires visuelles. Avec moi, pas de sprint nécessaire pour atteindre l'excellence : on y court à travers des stratégies gagnantes, le tout avec le sourire et un esprit d'équipe indéfectible. Prête pour le départ ?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front p-8">
+                        <h2 class="text-2xl font-semibold">Cyril</h2>
+                        <img src='img/Cyril.PNG'
+/>
+                        <p>Développement Back-End & Front-End</p>
+                    </div>
+                    <div class="flip-card-back p-8">
+                        <p>Développeur front et back end avec une endurance à toute épreuve... mais seulement quand il s'agit de coder. Mon record personnel ? Plus de 10 heures sans bouger de ma chaise, sauf pour me ravitailler en café.</p>
                     </div>
                 </div>
             </div>
@@ -902,7 +913,7 @@
     <section class="separation-section bg-white">
         <img src="img/run scroll.gif" alt="Image" class="separation-image">
     </section>
-
+</main>
 
     <script src="https://unpkg.com/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -941,10 +952,10 @@
             <div class="grid grid-cols-3 gap-4">
                 <div class="text-center">
                     <p>L'athlétisme en NC</p>
-                    <p>Nos Athlètes</p>
-                    <p>Jeux</p>
-                    <p>Vidéos</p>
-                    <p>A propos</p>
+                    <p><a href="#athletes">Nos Athlètes</a></p>
+                    <p><a href="#jeux">Jeux</a></p>
+                    <p><a href="#videos">Vidéos</a></p>
+                    <p><a href="#a-propos">A propos</a></p>
                 </div>
                 <div class="text-center">
                     <p>Toujours plus haut</p>
@@ -960,5 +971,6 @@
             <div class="mb-4">© 2024 SAÉ. Tous droits réservés.</div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

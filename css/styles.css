@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
 .splide__arrow {
     display: none;
 }
@@ -67,4 +71,24 @@
     color: white;
     border-radius: 8px;
     transform: rotateY(180deg);
+}
+
+.text-description {
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+    }
+    #nav-menu ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-menu ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
 }
